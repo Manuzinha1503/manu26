@@ -1,15 +1,19 @@
 const prompt = require("prompt-sync")();
-function menos(){
-
+function menos(a,b){
+    resultado = a-b
+    return resultado;
 }
-function soma(){
-
+function soma(a,b){
+    resultado = a+b
+    return resultado;
 }
-function multiplicacao(){
-
+function multiplicacao(a,b){
+    resultado = a*b
+    return resultado;
 }
-function divisao(){
-
+function divisao(a,b){
+    resultado = a/b
+    return resultado;
 }
 module.exports = {
     soma,
