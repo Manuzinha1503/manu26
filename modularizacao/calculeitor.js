@@ -9,16 +9,16 @@ opcao = Number(prompt("Digite o numero da sua opção: "));
 a = Number(prompt("Seu primeiro número: "))
 b = Number(prompt("Seu sengundo número: "))
 if(opcao === 1 ){
-    console.log(soma());
+    console.log(soma(a,b));
 }
 else if(opcao === 2){
-    console.log(menos());
+    console.log(menos(a,b));
 }
 else if(opcao === 3){
-    console.log(multiplicacao());
+    console.log(multiplicacao(a,b));
 }
 else if(opcao === 4){
-    console.log(divisao());
+    console.log(divisao(a,b));
 }
 else{
     console.log("Opção invalida!")
