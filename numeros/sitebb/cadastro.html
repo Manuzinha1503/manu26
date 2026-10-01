@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Animais</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <h1>Cadastro de Animais</h1>
+    <form id="cadastroForm">
+        <label>
+            Raça:
+            <input type="text" id="raca" name="raca">
+        </label>
+        <br><br>
+        <label>
+            Tipo:
+            <input type="text" id="tipo" name="tipo">
+        </label>
+        <br><br>
+        <label>
+            Características:
+            <textarea id="caracteristicas" name="caracteristicas" cols="50"></textarea>
+        </label>
+        <br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+    <div id="result"></div>
+    <script src="js.js"></script>
+</body>
+</html>

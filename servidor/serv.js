@@ -27,9 +27,9 @@ app.get("/usuarios", (req,res)=>{
 app.get("/usuarios/:id", (req,res) =>{
     const id = Number(req.params.id)
     const usuario = usuarios.find((item) =>{
-    return item.id===id;
+    return item.id === id;
     })
-    if(item.length === 0){
+    if(!usuarios){
         return res.status(404).json({mensagem: "ERRO"})
     }
     res.status(200).json(usuario);
