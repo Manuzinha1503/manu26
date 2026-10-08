@@ -56,4 +56,26 @@ const sql = "SELECT * FROM usuarios WHERE id_usuario = ?"
         return res.status(200).json(resultado)
     })
 })
+app.get("/categorias", (req, res) =>{
+    const sql = "SELECT * FROM categorias"
+    conexao.query(sql,(erro,resultado)=>{
+        if(erro){
+            return res.status(500).json({mensagem: status500})
+        }
+        else{
+            return res.status(200).json(resultado)
+        }
+    })
+})
+app.get("/produtos",(req,res) =>{
+    const sql = "SELECT * FROM produtos";
+    conexao.query(sql,(erro,resultado) =>{
+        if(erro){
+            return res.status(500).json({mensagem: status500});
+        }
+        else{
+            return res.status(200).json(resultado)
+        }
+    })
+})
 app.listen(porta, ()=>{console.log("Servidor rodando na porta: " + porta)})
